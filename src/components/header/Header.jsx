@@ -4,15 +4,18 @@ import { FaHeartbeat } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import BarreRecherche from './BarreRecherche';
 
+import alo from './../../asset/allomov.png';
+
 
 class Header extends Component {
 
     render() {
         return (
             <header >
-          
+
                 <Navbar bg="dark" variant="dark" expand="lg">
-                    <Navbar.Brand href="/">  AlloMoviE</Navbar.Brand>
+                    <img src={alo} width="3%" alt=""/>
+                    <Navbar.Brand href="/" >   AlloMoviE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">

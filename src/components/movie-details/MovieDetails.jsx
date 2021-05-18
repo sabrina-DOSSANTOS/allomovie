@@ -2,21 +2,29 @@ import React, { Component } from 'react';
 
 class MovieDetails extends Component {
 
-    submit = ( ) => {
+    submit = () => {
         this.props.history.push('/')
     }
-
-    back = ( ) => {
+    back = () => {
         this.props.history.goBack()
     }
-    
+
     render() {
+        const { movie, loaded, favoris } = this.props
         return (
             <div className="text-center">
-            <h1>Détail film</h1>
-            <button onClick={this.submit}>Aller à l'accueil</button>
-            <button onClick={this.back}>Retour à la page précédente</button>
-        </div>
+                <h2>Détail du film : {movie.title}</h2>
+                <div>
+                    <p>description : {movie.description}</p>
+                    <br />
+                    <span>{movie.detail} </span>
+                </div>
+                <div>
+                    <button onClick={this.submit}>Aller à l'accueil</button>
+                    <button onClick={this.back}>Retour à la page précédente</button>
+                </div>
+
+            </div>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import { FaHeart } from 'react-icons/fa';
 import { FaRegHeart } from 'react-icons/fa';
+import  nonDispo from './../../asset/nonDispo.jpg';
 
 class FavoriElement extends Component {
     render() {
@@ -18,7 +18,7 @@ class FavoriElement extends Component {
                         className="mb-3"
                     >
 
-                        <Card.Img src={favoris.img} />
+                        <Card.Img src={favoris.img === 'https://image.tmdb.org/t/p/w500null' ? (nonDispo):(favoris.img)} />
 
                         <Card.Body>
 
