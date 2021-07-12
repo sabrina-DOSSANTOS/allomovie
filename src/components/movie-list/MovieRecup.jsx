@@ -9,7 +9,6 @@ class MovieRecup extends Component {
 
         if (!loaded) return <Loader />
    
-      
         return (
             <Container  >
                 <h2 className="text-center mt-3 mb-4 text-warning" >Les films à découvrir...</h2>
@@ -21,8 +20,7 @@ class MovieRecup extends Component {
                             movie={m}
                             add={this.props.add}
                             supp={this.props.supp}
-                            isFavori={favoris.map(f => f.title).includes(m.title)}
-
+                            // isFavori={favoris.map(f => f.title).includes(m.title)}
                         />
                     )
                     )}

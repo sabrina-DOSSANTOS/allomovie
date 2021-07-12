@@ -9,7 +9,7 @@ class MovieElement extends Component {
     render() {
 
         const { movie, loaded, favoris } = this.props
-        console.log(movie.img)
+        console.log(loaded)
 
         return (
             <Col xs={12} md={6} lg={4} xls={3}>

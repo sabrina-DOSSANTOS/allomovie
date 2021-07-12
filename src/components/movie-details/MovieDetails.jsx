@@ -13,6 +13,7 @@ class MovieDetails extends Component {
         const { movie, loaded, favoris } = this.props
         return (
             <div className="text-center">
+                {console.log(this.props.loaded)}
                 <h2>Détail du film : {movie.title}</h2>
                 <div>
                     <p>description : {movie.description}</p>

@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+label{
+  font-size: 1rem;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.bloc-input {
+  margin: 2rem;
+}
+
+.boutons {
+  display: flex;
+  place-content: space-around;
+}
+
+.container {
+  background-color: rgb(254 255 230);
+  margin: auto;
+  width: 50%;
+}
+
+.row
+{
+  min-width: 100%;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+
+.titre {
+  place-content: center;
+  padding-top: 1.5rem;
+  color: #21d4dd;
+}
+
+@media screen and (min-width: 1700px){
+
+ .container {
+    width: 30%;
+ }
+
+  .md-6 {
+    width: 90%;
+  }
+}
+

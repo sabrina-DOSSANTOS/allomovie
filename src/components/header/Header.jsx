@@ -8,7 +8,7 @@ import alo from './../../asset/allomov.png';
 
 
 class Header extends Component {
-
+ 
     render() {
         return (
             <header >
@@ -22,6 +22,7 @@ class Header extends Component {
 
                             {/* pour que le lien passe sans rafraichir : mettre le as  */}
                             <Nav.Link as={Link} exact to='/' activeClassName='text-muted' >Accueil</Nav.Link>
+                            <Nav.Link as={Link} exact to='/inscription' activeClassName='text-muted' >Inscription</Nav.Link>
                             <Nav.Link as={Link} to="/favoris" activeClassName='text-muted'> <FaHeartbeat variant="primary" />  Mes favoris</Nav.Link>
                         </Nav>
                         <BarreRecherche updateMovies={this.props.updateMovies} loaded={this.props.loaded} />
